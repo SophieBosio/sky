@@ -159,6 +159,9 @@
      ;; (homoglyph           ())
      ;; (nobreak-space       ())
      (tooltip             (:foreground lake :background darker-background :inherit 'fixed-pitch))
+     (tab-line            (:foreground cobalt :background light-blue-highlight))
+     (tab-line-active     (:inherit 'tab-line))
+     (tab-line-inactive   (:inherit 'tab-line))
 
 	 ;; ;; Line numbers
      (line-number                 (:foreground cool-medium-grey :slant 'italic))
