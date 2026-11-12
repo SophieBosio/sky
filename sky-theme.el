@@ -150,6 +150,7 @@
      (alert-moderate-face (:foreground gold                                    :weight 'bold))
      (alert-high-face     (:foreground auburn                                  :weight 'bold))
      (alert-urgent-face   (:foreground auburn :background medium-red-highlight :weight 'bold))
+     (custom-invalid      (:foreground auburn :background medium-red-highlight :weight 'bold))
      ;; (trailing-whitespace ())
      ;; (escape-glyph        ())
      (header-line         (:background cool-light-grey :foreground black))
@@ -225,9 +226,9 @@
      ;; (whitespace-trailing         ())
      (whitespace-line             (:foreground auburn :background medium-red-highlight))
      ;; (whitespace-space-before-tab ())
-     ;; (whitespace-indentation      ())
-     ;; (whitespace-empty            ())
      ;; (whitespace-space-after-tab  ())
+     (whitespace-empty            (:background light-yellow-highlight))
+     (whitespace-indentation      (:inherit 'whitespace-empty))
 
      ;; Built-in show-paren-mode
      (show-paren-match            (:foreground cobalt :background light-blue-highlight :weight 'bold))
@@ -399,7 +400,8 @@
 	 ;; |------------- COMPLETION & SEARCH -------------|
 
      ;; Minibuffer
-     (minibuffer-prompt (:foreground denim))
+     (minibuffer-prompt      (:foreground denim))
+     (minibuffer-nonselected (:background light-yellow-highlight))
 
      ;; Generic completions
      (completions-common-part (:foreground cobalt))
